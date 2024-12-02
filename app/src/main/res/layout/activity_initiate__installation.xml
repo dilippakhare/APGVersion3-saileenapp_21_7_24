@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".ui.visit.ScheduleVisit">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PO Date"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPODate"
+            android:layout_weight="1"
+            android:text="Select Date"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Expected Date"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnExpectedDate"
+            android:layout_weight="1"
+            android:text="Select Date"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Group"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSelectGroup"
+            android:layout_weight="1"
+            android:text="Select Group"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Select Customer" />
+
+        <Button
+            android:id="@+id/btnSelectCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Customer" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Assing To"
+            android:layout_marginLeft="5dp"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spAssignTO"
+            android:layout_weight="1"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/bground"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Service Email ScreenShot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <Button
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnBrouse"
+            android:text="Service Email ScreenShot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/bground"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Contact Person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:background="@drawable/edittext_selector"
+                android:id="@+id/edContactname"
+                android:paddingLeft="2dp"
+                android:hint="Name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </EditText>
+            <EditText
+                android:layout_marginTop="5dp"
+                android:paddingLeft="2dp"
+                android:background="@drawable/edittext_selector"
+                android:id="@+id/edContactNo"
+                android:hint="Number"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </EditText>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/bground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSelectProduct"
+            android:layout_weight="1"
+            android:text="Select Products"
+            />
+        <LinearLayout
+            android:background="#c0c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mainProductList"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <Button
+        android:id="@+id/btnInitiate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_submit"
+        android:layout_margin="15dp"
+        android:text="Initiate Installation" />
+
+</LinearLayout>

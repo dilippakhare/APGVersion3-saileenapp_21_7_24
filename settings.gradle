@@ -1,0 +1,5 @@
+include ':app'
+//include ':demo'
+include ':cameraview'
+include ':MPChartLib'
+include ':progressviewslib'

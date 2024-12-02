@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.complaint.CustomerComplaintRemark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Provide Rating On Solving Complaint Service By Our Engineer"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        />
+    <RadioGroup
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdGood"
+            android:text="Good"
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rdExcelent"
+            android:text="Excelent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rdAverage"
+            android:text="Average"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rdPoor"
+            android:text="Poor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+  <EditText
+      android:hint="Remark"
+      android:background="@drawable/edittext_selector"
+      android:padding="3dp"
+      android:layout_margin="10dp"
+      android:id="@+id/edRemark"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      ></EditText>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+    </Button>
+
+
+</LinearLayout>

@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.quotation.MuterialRequest">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:padding="10dp"
+        android:background="@drawable/bground"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="2"
+                android:layout_margin="3dp"
+                android:text="Request By"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:id="@+id/txtBy"
+                android:textColor="#F000"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:text="Emp Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="3dp"
+            android:background="#ccc"
+            ></LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="5dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtCustomer"
+
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:text="Equipment :-"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:id="@+id/txtName"
+
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:text="CSD 102 . 7.5 Bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:text="Type :-"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:id="@+id/txtType"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:text="Screw Compressor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="10dp"
+                        android:text="Port No:-"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/txtPort"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:text="CD 123"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Serial No.:-"
+                        android:textSize="10dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtSerial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1234"
+                        android:textColor="@android:color/black"></TextView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="10dp"
+                        android:text="Start Up :-"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/txtAmcStart"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:text="3 jan 2018"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="AMC End:-"
+                        android:textSize="10dp"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtAmcEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1234"
+                        android:textColor="@android:color/black"></TextView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/ln"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:textSize="10dp"
+                    android:text=""
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <Button
+                    android:id="@+id/btnBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_selector"
+                    android:text="Select"
+                    android:textColor="@android:color/white">
+
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="3dp"
+            android:background="#ccc"
+            ></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:text="Product Details "></TextView>
+
+            <EditText
+                android:background="@drawable/bground1"
+                android:id="@+id/edPDetails"
+                android:textColor="#F000"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:hint="Product Details"
+                android:padding="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:text="Amount "></TextView>
+
+            <EditText
+                android:background="@drawable/bground1"
+                android:id="@+id/edAmount"
+                android:textColor="#F000"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:hint="Amount"
+                android:padding="5dp"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:text="Risk Level"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            ></TextView>
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:layout_height="match_parent" >
+            <RadioButton
+                android:id="@+id/rdHigh"
+                android:text="High"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rdMedium"
+                android:text="Medium"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rdLow"
+                android:text="Low"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+
+        </RadioGroup>
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Requirement Type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent" >
+                <RadioButton
+                    android:id="@+id/rdTrial"
+                    android:text="Trial basis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rdCFF"
+                    android:text="CCF"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rdLoadBasis"
+                    android:text="Loan Basis"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:text="Reason "></TextView>
+
+            <EditText
+                android:background="@drawable/bground1"
+                android:id="@+id/edReason"
+                android:textColor="#F000"
+                android:minLines="2"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:hint="Reason"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </LinearLayout>
+    </LinearLayout>
+        <Button
+            android:background="@drawable/button_selector"
+            android:textColor="#FFFFFF"
+            android:text="Make Request"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/btnRequest"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </Button>
+
+    <LinearLayout
+        android:id="@+id/linearSection1"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/bground"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Sanction Group 1"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp" android:background="#c0c0c0"></LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtSaction1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Sanction By"
+                android:textColor="@android:color/black">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/spiner1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+             <LinearLayout
+                 android:layout_marginTop="5dp"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="Sanction Status : "
+                        ></TextView>
+
+                  <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingLeft="50dp"
+                android:layout_height="match_parent" >
+            <RadioButton
+                android:id="@+id/rdSaction1"
+                android:text="Approve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+
+            <RadioButton
+
+                android:id="@+id/rdSaction1NOt"
+                android:text="Reject"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+            </RadioGroup>
+             </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Note/Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:id="@+id/edNote1"
+                android:hint="Note/Description/Reject Reason"
+                android:paddingLeft="5dp"
+                android:minLines="2"
+                android:background="@drawable/edittext_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+        </LinearLayout>
+        <Button
+            android:background="@drawable/button_selector"
+            android:textColor="#FFFFFF"
+            android:text="Submit"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/btnSection1"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="40dp">
+
+        </Button>
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:id="@+id/linearSection2"
+            android:layout_margin="5dp"
+            android:background="@drawable/bground"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Sanction Group 2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="#c0c0c0"></LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtSaction2"
+                    android:text="Sanction By"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/spiner2"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="Sanction Status : "
+                        ></TextView>
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="50dp"
+                        android:layout_height="match_parent" >
+                        <RadioButton
+                            android:id="@+id/rdSaction2"
+                            android:text="Approve"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </RadioButton>
+
+                        <RadioButton
+
+                            android:id="@+id/rdSaction2NOt"
+                            android:text="Reject"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </RadioButton>
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Note/Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <EditText
+                    android:id="@+id/edNote2"
+                    android:hint="Note/Description/Reject Reason"
+                    android:paddingLeft="5dp"
+                    android:minLines="2"
+                    android:background="@drawable/edittext_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+            </LinearLayout>
+            <Button
+                android:background="@drawable/button_selector"
+                android:textColor="#FFFFFF"
+                android:text="Submit"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/btnSection2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSection3"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@drawable/bground"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sanction Group 3"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="#c0c0c0"></LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtSaction3"
+                    android:text="Sanction By"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/spiner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="Sanction Status : "
+                        ></TextView>
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="50dp"
+                        android:layout_height="match_parent" >
+                        <RadioButton
+                            android:id="@+id/rdSaction3"
+                            android:text="Approve"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </RadioButton>
+
+                        <RadioButton
+
+                            android:id="@+id/rdSaction3NOt"
+                            android:text="Reject"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </RadioButton>
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Note/Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <EditText
+                    android:id="@+id/edNote3"
+                    android:hint="Note/Description/Reject Reason"
+                    android:paddingLeft="5dp"
+                    android:minLines="2"
+                    android:background="@drawable/edittext_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+            </LinearLayout>
+            <Button
+                android:background="@drawable/button_selector"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                android:text="Submit"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/btnSection3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.apgautomation">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <dist:module dist:instant="true" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.apgautomation.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.apgautomation.gcm.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+
+    <application
+        android:name="com.apgautomation.UILApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/apg"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.apgautomation.ui.SignatureActivity"
+            android:label="@string/title_activity_signature"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.apgautomation.ui.enquiry.EnquiryList" />
+        <activity
+            android:name="com.apgautomation.ui.enquiry.AddEnquiry"
+            android:label="@string/title_activity_add_enquiry"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.apgautomation.ui.installation.InstallationDetails"
+            android:label="@string/title_activity_installation_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.apgautomation.ui.installation.Initiate_Installation" />
+        <activity
+            android:name="com.apgautomation.ui.installation.InstallationList"
+            android:label="@string/title_activity_installation_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.apgautomation.ui.quotation.MuteilaRequestList"
+            android:label="@string/title_activity_muteila_request_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.apgautomation.ui.quotation.MuterialRequest" />
+        <activity android:name="com.apgautomation.ConfirmCameraPhoto" />
+        <activity android:name="com.apgautomation.ui.complaint.ChangeComplaintStatusActivity" />
+        <activity android:name="com.apgautomation.ui.summary.AMCSummaryActivity" />
+        <activity
+            android:name="com.apgautomation.ui.customer.Helpline"
+            android:label="@string/title_activity_helpline"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.apgautomation.ui.complaint.ScheduleComplaint" />
+        <activity android:name="com.apgautomation.ui.visit.SearchCustomerProduct" />
+        <activity
+            android:name="com.apgautomation.ui.quotation.GenrateQuotationRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.complaint.ClosedComplaintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.complaint.ComplaintDashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.apgautomation.ui.communication.CommunicationDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.communication.AskQuery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.communication.Communication"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.apgautomation.ui.taskmgmt.ui.Filter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.taskmgmt.ui.Note"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.taskmgmt.ui.TaskDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.taskmgmt.ui.CreateTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.taskmgmt.ui.EditTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.taskmgmt.ui.TaskMgmt"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.apgautomation.ui.visit.FilterOption" />
+        <activity
+            android:name="com.apgautomation.ui.complaint.CustomerComplaintRemark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.salesvisit.SalesVisitDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.salesvisit.SalesVisitPendingList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.salesvisit.CreateNewCustomer"
+            android:label="@string/title_activity_create_new_customer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.apgautomation.ui.salesvisit.SalesScheduleVisit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.salesvisit.SalesVisitAllList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.customer.UserCreation"
+            android:label="@string/title_activity_user_creation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.apgautomation.ui.customer.UserCreation2"
+            android:label="@string/title_activity_user_creation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.apgautomation.ui.ViewImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.visit.VisitDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.notifications.CreateNotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.notifications.SelectEmployee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.quotation.QuotationDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.quotation.QuotationList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.notifications.NoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.notifications.NoticeDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.visit.AllVisitList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.customer.SelectGroup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.visit.VisitMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.complaint.SelectSearchCustomer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.complaint.SelectSearchMultipleCustomer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.complaint.ViewComplaintDetails"
+            android:label="@string/title_activity_view_complaint_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.apgautomation.ui.complaint.ViewComplaint"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.complaint.BookComplaint"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.customer.ViewProducts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.complaint.SelectProducts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.complaint.ViewAllComplaint"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.customer.CustomerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.leave.LeaveApplicationDetails"
+            android:label="@string/title_activity_leave_application_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.apgautomation.ui.leave.LeaveApplications"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.leave.LeaveApplicationsLiist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.leave.LeaveApplicationsLiistForManager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.attendance.ViewAttenadnceDetails"
+            android:label="@string/title_activity_view_attenadnce_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.apgautomation.ui.attendance.EmployeeRecentAttenance"
+            android:label="@string/title_activity_employee_recent_attenance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.apgautomation.ui.attendance.EmployeeAttendanceList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.attendance.MarkAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.HomePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.visit.ScheduleVisit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.visit.ProcessVisit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.visit.VisitList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.visit.VisitCustomerList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.visit.CustomerVisitListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.communication.AskQueryReply"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.ui.customer.SelectSearchCustomerProduct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.MainActivityLauncher"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/common_full_open_on_phone" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service
+            android:name="com.apgautomation.fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.apgautomation.ui.salesvisit.SalesVisitMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apgautomation.CameraActivity"
+            android:configChanges="screenLayout|keyboardHidden"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="com.apgautomation.PicturePreviewActivity"
+            android:label="Picture Preview" />
+        <activity
+            android:name="com.apgautomation.VideoPreviewActivity"
+            android:label="Video Preview" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.apgautomation.ui.WebViewactivity"
+            android:label="Video Preview" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+
+</manifest>

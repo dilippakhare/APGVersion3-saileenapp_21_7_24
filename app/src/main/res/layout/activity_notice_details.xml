@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NoticeDetails">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:id="@+id/txtTopic"
+                android:text="Notice Model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+              <TextView
+                  android:textColor="@android:color/holo_green_dark"
+                  android:textSize="8dp"
+                  android:id="@+id/txtDate"
+                  android:layout_margin="5dp"
+                  android:gravity="right"
+                  android:text="Date"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+              </TextView>
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="13dp"
+                android:id="@+id/txtDetails"
+                android:text="Notice Model Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btnAttachment"
+                android:text="View Attachment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

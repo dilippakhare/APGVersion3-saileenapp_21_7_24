@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent"
+    tools:context=".ui.taskmgmt.ui.TaskDetails">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/title"
+          android:textColor="@android:color/black"
+          android:text="Title"
+          android:textSize="17dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+      </TextView>
+      <TextView
+          android:id="@+id/desc"
+          android:layout_margin="5dp"
+          android:textColor="@android:color/black"
+          android:text="Description"
+          android:textSize="14dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+      </TextView>
+
+      <LinearLayout
+          android:background="@drawable/editetextborder1"
+          android:orientation="vertical"
+          android:padding="5dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_weight="1"
+              android:text="Task No.:-"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+
+          <TextView
+              android:id="@+id/txtNumber"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:textColor="@android:color/black">
+
+          </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ef309cba"
+            ></LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_weight="1"
+              android:text="Assigned To :-"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+          <TextView
+              android:layout_weight="1"
+              android:id="@+id/txtAssignTo"
+              android:text="Rahul Patil"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ef309cba"
+            ></LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_weight="1"
+              android:text="Status :-"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+          <TextView
+              android:layout_weight="1"
+              android:id="@+id/txtStatus"
+              android:text="Open"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ef309cba"
+            ></LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_weight="1"
+              android:text="Is Repeated task :-"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+          <TextView
+              android:layout_weight="1"
+              android:id="@+id/txtRepeated"
+              android:text=""
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ef309cba"
+            ></LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_weight="1"
+              android:text="Priority-"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+          <TextView
+              android:layout_weight="1"
+              android:id="@+id/txtPrioirty"
+              android:text="Due Date"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ef309cba"
+            ></LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_weight="1"
+              android:text="Due Date :-"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+          <TextView
+              android:layout_weight="1"
+              android:id="@+id/txtDueDate"
+              android:text="Due Date"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ef309cba"
+            ></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="2.2"
+              android:text="Created By:-"
+              android:textColor="@android:color/black">
+
+          </TextView>
+          <TextView
+              android:layout_weight="1"
+              android:id="@+id/txtCreatedBy"
+              android:text="Rahul Patil"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ef309cba"
+            ></LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_weight="1"
+              android:text="Attachment :-"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+          <Button
+              android:layout_weight="1"
+              android:id="@+id/btnAttchment"
+              android:text="View Attachment"
+              android:textSize="12dp"
+              android:textColor="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="35dp">
+
+          </Button>
+        </LinearLayout>
+      </LinearLayout>
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <TextView
+            android:text="Task Activities"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c0c0c0"
+            ></LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linearActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+
+      </LinearLayout>
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/fab"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+          android:layout_margin="@dimen/fab_margin"
+          app:srcCompat="@android:drawable/ic_input_add" />
+
+      <Button
+          android:id="@+id/btnClose"
+          android:layout_width="match_parent"
+          android:layout_height="35dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:background="@drawable/button_selector"
+          android:text="Close This Task"
+          android:textColor="@android:color/white"></Button>
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

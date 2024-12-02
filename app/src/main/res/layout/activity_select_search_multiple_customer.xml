@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.complaint.SelectSearchCustomer">
+
+
+    <EditText
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:padding="5dp"
+        android:hint="Search Customer"
+        android:imeOptions="actionSearch"
+        android:id="@+id/edsearch"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:background="@drawable/edittext_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_below="@id/edsearch"
+        android:id="@+id/listview"
+        android:layout_above="@id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Done" />
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/txtTopic"
+    android:textSize="18dp"
+    android:textColor="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ></TextView>
+
+    <TextView
+        android:id="@+id/txtLocal"
+        android:textSize="14dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/txtServer"
+        android:textSize="14dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></TextView>
+    <Button
+        android:id="@+id/syncRec"
+        android:visibility="gone"
+        android:text="Sync with Server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+</LinearLayout>

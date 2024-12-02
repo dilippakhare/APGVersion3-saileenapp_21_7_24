@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+ <LinearLayout
+    android:orientation="horizontal"
+     android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+     <TextView
+         android:layout_weight="1.3"
+         android:text="03/12/1989"
+         android:id="@+id/txtDate"
+         android:textColor="#289288"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+     <TextView
+         android:id="@+id/txtCustomer"
+         android:layout_weight="1"
+         android:layout_marginLeft="3dp"
+         android:text="Customer"
+         android:textColor="@android:color/black"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+
+
+     <TextView
+         android:id="@+id/txtEquipment"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1.1"
+         android:layout_marginLeft="3dp"
+         android:text="CSD 007"
+         android:textColor="@android:color/black"/>
+
+ </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="0.23"
+            android:textColor="@android:color/black"
+             android:id="@+id/txtPlaanedType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:id="@+id/txtApplicationDate"
+            android:text="19/11/2019"
+            android:textSize="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="1.3"
+        android:textColor="@android:color/black"
+        android:text="Employee Name :- "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:id="@+id/txtEmpName"
+        android:text="Atharv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1.3"
+            android:textColor="@android:color/black"
+            android:text="Responsible Person :- "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:id="@+id/txtResponsible"
+            android:text="Aysuh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1.3"
+            android:textColor="@android:color/black"
+            android:text="Send To :- "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:id="@+id/txtSendToName"
+            android:text="Aysuh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1.3"
+            android:textColor="@android:color/black"
+            android:text="Number of leave :- "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:id="@+id/txtNumberOfLeave"
+            android:text="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1.3"
+            android:textColor="@android:color/black"
+            android:text="Leave Dates :- "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:id="@+id/txtLeaveDates"
+            android:text="19/11/2019(Full Days)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1.3"
+            android:textColor="@android:color/black"
+            android:text="Approval Status :- "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:id="@+id/txtApprovalStatus"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1.3"
+            android:textColor="@android:color/black"
+            android:text="Approval Remarks :- "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:id="@+id/txtApprovalRemarks"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "911190260361",
+    "firebase_url": "https://excel-push-235415.firebaseio.com",
+    "project_id": "excel-push-235415",
+    "storage_bucket": "excel-push-235415.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911190260361:android:f94b1e14b4cbcb5a",
+        "android_client_info": {
+          "package_name": "com.apgautomation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911190260361-ab9krnk9jt6eaj7cehdjr2q6a5ktsfp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkz3FWHw9_mMOaM5l1ITwxhGhJFO7dME4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

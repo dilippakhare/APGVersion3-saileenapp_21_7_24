@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#DDDBDB"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+     <LinearLayout
+         android:layout_margin="5dp"
+         android:background="#ffffff"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <TextView
+        android:id="@+id/txtTitle"
+        android:text="Achalkar Group"
+        android:textSize="16dp"
+        android:padding="5dp"
+
+        android:textColor="@android:color/black"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+         <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_marginLeft="5dp"
+         android:layout_height="wrap_content"
+         >
+         <TextView
+             android:layout_weight="1"
+             android:text="Engineer Name :-"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+         </TextView>
+         <TextView
+             android:layout_weight="1"
+             android:id="@+id/txtEngName"
+             android:textColor="@android:color/black"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+         </TextView>
+
+     </LinearLayout>
+         <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_marginLeft="5dp"
+         android:layout_height="wrap_content"
+         >
+             <LinearLayout
+                 android:layout_weight="1"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_weight="1"
+                     android:text="Schedule Date :-"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                 </TextView>
+                 <TextView
+                     android:layout_weight="1"
+                     android:id="@+id/txtScheduleDate"
+                     android:textColor="@android:color/black"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                 </TextView>
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_weight="1"
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_weight="1"
+                     android:text="Visit Date :-"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                 </TextView>
+                 <TextView
+                     android:layout_weight="1"
+                     android:id="@+id/txtvisitDate"
+                     android:textColor="@android:color/black"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                 </TextView>
+             </LinearLayout>
+     </LinearLayout>
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_marginLeft="5dp"
+             android:layout_height="wrap_content"
+             >
+             <TextView
+                 android:layout_weight="1"
+                 android:text="Visit Status:-"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+             </TextView>
+             <TextView
+                 android:layout_weight="1"
+                 android:id="@+id/txtStatus"
+                 android:textColor="@android:color/black"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+             </TextView>
+
+         </LinearLayout>
+     </LinearLayout>
+
+</LinearLayout>

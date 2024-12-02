@@ -1,0 +1,156 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+
+android{
+            compileOptions {
+                targetCompatibility = "8"
+                sourceCompatibility = "8"
+            }
+
+
+   // com.com.apgautomation
+
+            compileSdkVersion 33
+            buildToolsVersion "30.0.3"
+            defaultConfig {
+                applicationId "com.apgautomation"
+                minSdkVersion 16
+                targetSdkVersion 34
+                versionCode 126
+                versionName "12.6"
+                testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+                multiDexEnabled true
+
+                javaCompileOptions {
+                    annotationProcessorOptions {
+                        includeCompileClasspath true
+                    }
+                }
+
+                vectorDrawables.useSupportLibrary = true
+
+            }
+           sourceSets["main"].java.srcDir("src/main/kotlin")
+            dexOptions {
+                jumboMode true
+            }
+            lintOptions {
+                checkReleaseBuilds false
+                // Or, if you prefer, you can continue to check for errors in release builds,
+                // but continue the build even when errors are found:
+                abortOnError false
+            }
+
+            buildTypes {
+                release {
+                    minifyEnabled false
+                    proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                }
+            }
+
+            packagingOptions {
+                exclude 'META-INF/DEPENDENCIES'
+            }
+
+        }
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0-rc02'
+    implementation 'androidx.navigation:navigation-ui:2.0.0-rc02'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'com.android.support:support-v4:30.+'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    implementation project(':MPChartLib')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation 'com.google.firebase:firebase-iid:17.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.3'
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
+
+
+
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    //  implementation 'com.jakewharton:butterknife:7.0.1'
+
+
+    implementation 'com.google.code.gson:gson:2.3'
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //implementation 'info.hoang8f:fbutton:1.0.5'
+    implementation 'cc.cloudist.acplibrary:library:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    // implementation 'com.jakewharton:butterknife:7.0.1'
+    implementation 'com.google.code.gson:gson:2.3'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.google.android.gms:play-services-plus:11.6.0'
+    //implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+
+   // implementation 'com.google.apis:google-api-services-youtube:v3-rev120-1.19.0'
+  //  implementation 'com.google.http-client:google-http-client-android:+'
+  //  implementation 'com.google.api-client:google-api-client-android:+'
+   // implementation 'com.google.api-client:google-api-client-gson:+'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation 'com.mcxiaoke.volley:library:1.0.18'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation 'com.google.firebase:firebase-iid:17.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.3'
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
+
+    // implementation 'com.judemanutd:autostarter:1.0.0'
+
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
+    //implementation 'com.jakewharton:butterknife:8.8.1'
+    // annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+
+  //  implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+//    implementation project(':MPChartLib')
+    implementation project(':progressviewslib')
+    implementation project(':cameraview')
+
+    implementation 'com.github.gcacace:signature-pad:1.3.1'
+
+}
+
+repositories {
+    maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+    mavenCentral()
+}
+//apply plugin: 'com.google.gms.google-services'
+
+
+//com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
+

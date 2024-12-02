@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_sync"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Sync"
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/action_ResetApp"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Reset App"
+        >
+
+    </item>
+
+</menu>

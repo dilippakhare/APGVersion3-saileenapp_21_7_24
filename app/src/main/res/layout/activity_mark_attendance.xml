@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#F8F7F7"
+    tools:context=".ui.attendance.MarkAttendance">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textColor="@android:color/black"
+           android:text="Select Attendance" />
+       <Button
+           android:id="@+id/btnSelect"
+           android:layout_width="match_parent"
+           android:layout_height="38dp"
+           android:layout_weight="1"
+           android:text="Select"
+
+           android:textColor="#ffffff"
+           android:drawableRight="@drawable/ic_dropdown"
+           android:background="@drawable/button_dropdown"
+         >
+
+       </Button>
+   </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/txtCurrentStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#2196F3"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@android:color/white"
+        android:text="Start Attendance"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </Button>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <CheckBox
+           android:id="@+id/chk"
+           android:text="Is TA Applied"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+       </CheckBox>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:text="Start Km" />
+
+                <EditText
+                    android:id="@+id/edStartKm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edittext_selector"
+                    android:hint="Start Km"
+                    android:inputType="number"
+                    android:padding="5dp">
+
+                </EditText>
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="5dp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+              <TextView
+                  android:text="Start Time"
+                  android:textColor="@android:color/black"
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+              </TextView>
+               <TextView
+                   android:layout_weight="0.8"
+                   android:id="@+id/txtStartTime"
+                   android:textColor="@android:color/black"
+                   android:layout_marginLeft="5dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   android:text="" />
+           </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@android:color/black"
+                    android:text="Start Location :- " />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtStartLocationStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Not Found">
+
+                    </TextView>
+
+                    <Button
+
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/btnStartLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:background="#FFFFFF"
+                        android:textColor="#4DC8FF"
+                        android:text="View"
+                        android:visibility="visible"></Button>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgStart"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@android:drawable/ic_menu_camera"></ImageView>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSaveStartLocation"
+            android:background="@drawable/button_selector"
+            android:textColor="@android:color/white"
+            android:text="Save Start Km"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </Button>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:text="End Km :-" />
+
+                <EditText
+                    android:id="@+id/edEndKm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/edittext_selector"
+                    android:hint="End Km"
+                    android:inputType="number"
+                    android:padding="5dp">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="End Time :-"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/txtEndTime"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:text="End Location :- " />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtEndLocationStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="5dp"
+                        android:text="Not Found">
+
+                    </TextView>
+
+                    <Button
+                        android:id="@+id/btnEndLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:background="#FFFFFF"
+                        android:textColor="#4DC8FF"
+                        android:text="View"
+                        android:visibility="visible"></Button>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+
+            <ImageView
+                android:id="@+id/imgEnd"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@android:drawable/ic_menu_camera"></ImageView>
+
+        </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSaveEndLocation"
+            android:background="@drawable/button_selector"
+            android:textColor="@android:color/white"
+            android:text="Save End Km"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+         android:id="@+id/btnSubmit"
+        android:background="@drawable/button_selector"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="Save"></Button>
+
+
+</LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

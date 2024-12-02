@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#DDDBDB"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:text="Achalkar Group"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtCustomer"
+            android:text="Achalkar Customer"
+            android:textSize="13dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:text="Engineer Name :-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtEngName"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:text="Schedule Date :-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtScheduleDate"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:text="Visit Status:-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtStatus"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:text="Schedule By:-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtScheduleBy"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:text="Visit Type:-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtVisitType"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+           android:id="@+id/linearStart"
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+
+                android:background="@drawable/button_selector"
+                android:textColor="@android:color/white"
+                android:text="Start Visit"
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearDetails"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:text="Work Details:-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/edWork"
+                android:hint="Enter Work Details"
+                android:padding="2dp"
+                android:minLines="2"
+                android:inputType="textMultiLine"
+                android:background="@drawable/edittext_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:text="Remark:-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/edRemark"
+                android:hint="Enter your remark"
+                android:minLines="2"
+                android:padding="2dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/edittext_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:layout_marginTop="-5dp"
+                android:text="Follow Up/Pending Points:-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/edFollowup"
+                android:hint="Follow Up/Pending Points"
+                android:minLines="2"
+                android:padding="2dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/edittext_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:layout_marginTop="-5dp"
+                android:text="Priority:-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <RadioGroup
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_weight="1"
+                    android:id="@+id/rdHot"
+                    android:text="Hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></RadioButton>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:id="@+id/rdWarm"
+                    android:text="Warm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></RadioButton>
+                <RadioButton
+                    android:layout_weight="1"
+                    android:id="@+id/rdCold"
+                    android:text="Cold"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:layout_marginTop="-5dp"
+                android:text="Contact Person-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/edContactPerson"
+                android:hint="Name"
+                android:padding="2dp"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edittext_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:layout_marginTop="-5dp"
+                android:text="Contact Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/edContactNumber"
+                android:hint="Contact Number"
+                android:padding="2dp"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edittext_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:layout_marginTop="-5dp"
+                android:text="Contact EmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/edEmailId"
+                android:hint="Email"
+                android:padding="2dp"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edittext_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="2"
+                android:layout_marginTop="-5dp"
+                android:text="Compony Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/edComponyAddress"
+                android:hint="Compony Address"
+                android:padding="2dp"
+                android:minLines="2"
+
+                android:inputType="textPostalAddress"
+                android:imeOptions="actionDone"
+                android:background="@drawable/edittext_selector"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="2"
+                 android:layout_marginTop="5dp"
+                android:text="Call Status:-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Done"
+                        android:id="@+id/chkDone"
+                        ></CheckBox>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending"
+                        android:id="@+id/chkPending"
+                        ></CheckBox>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reschedule"
+
+                        android:id="@+id/chkReschedule"
+                        ></CheckBox>
+                    <Button
+                        android:id="@+id/btnReScheduleDate"
+                        android:text="Select Date"
+                        android:textSize="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:id="@+id/chkQuation"
+                android:text="Any Quatation Request"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:id="@+id/btnGenerateQuatation"
+                android:text="Add Quatation Request"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lQuation"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Quatation Request"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                ></LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:id="@+id/linearLocation"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:text="Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtViewLocation"
+                android:textColor="#078899"
+                android:text="Clik to View Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lvisitPhoto"
+            android:visibility="gone"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Visit Photo : "
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <ImageView
+                android:id="@+id/imgVisitPhtoto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:src="@android:drawable/ic_menu_camera"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/linearClose"
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+
+                android:background="@drawable/button_selector"
+                android:textColor="@android:color/white"
+                android:text="Close Visit"
+                android:id="@+id/btnClose"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

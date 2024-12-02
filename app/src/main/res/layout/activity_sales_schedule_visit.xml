@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".ui.visit.ScheduleVisit">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Schedule Date"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnScheduleDate"
+            android:layout_weight="1"
+            android:text="Select Date"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Engineer Name"
+            android:layout_marginLeft="5dp"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spAssignTO"
+            android:layout_weight="1"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/chkIsNewGroup"
+        android:text="Is New Group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </CheckBox>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Group"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSelectGroup"
+            android:layout_weight="1"
+            android:text="Select Group"
+            />
+
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/chkIsNewCustomer"
+        android:text="Is New Customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </CheckBox>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Select Customer" />
+
+        <Button
+            android:id="@+id/btnSelectCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Customer" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Visit Type"
+            android:layout_marginLeft="5dp"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spVisitType"
+            android:layout_weight="1"
+            style="@android:style/Widget.Holo.Light.Spinner"
+
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <Button
+        android:id="@+id/btnSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_submit"
+        android:layout_margin="15dp"
+        android:text="Schedule Visit" />
+
+</LinearLayout>

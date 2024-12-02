@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.visit.VisitDetails">
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:text="Achalkar Group"
+                android:textSize="16dp"
+                android:padding="5dp"
+
+                android:textColor="@android:color/black"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Engineer Name :-"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txtEngName"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Schedule Date :-"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txtScheduleDate"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Visit Status:-"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txtStatus"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Reamrk:-"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txtRemark"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearContact"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_weight="2"
+                        android:layout_marginTop="-5dp"
+                        android:text="Contact Person-"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/edContactPerson"
+                        android:hint="Name"
+                        android:padding="2dp"
+                        android:inputType="textPersonName"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/edittext_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_weight="2"
+                        android:layout_marginTop="-5dp"
+                        android:text="Contact Number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/edContactNumber"
+                        android:hint="Contact Number"
+                        android:padding="2dp"
+                        android:inputType="number"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/edittext_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_weight="2"
+                        android:layout_marginTop="-5dp"
+                        android:text="Contact EmailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/edEmailId"
+                        android:hint="Email"
+                        android:padding="2dp"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/edittext_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_weight="2"
+                        android:layout_marginTop="-5dp"
+                        android:text="Compony Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <EditText
+                        android:layout_weight="1"
+                        android:id="@+id/edComponyAddress"
+                        android:hint="Compony Address"
+                        android:padding="2dp"
+                        android:minLines="2"
+                        android:inputType="textPostalAddress"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/edittext_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </EditText>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearVisit"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Visit Photo:-"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/imgVisitPhtoto"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:id="@+id/linearLocation"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Start Location"
+                    android:textColor="#068696"
+                    android:id="@+id/txtStartLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txtEndLocation"
+                    android:text="End Location"
+                    android:textColor="#068696"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Start Time:-"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txtStartTime"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_weight="1"
+                    android:text="End Time:-"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/txtEndTime"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lFSR"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Field Service Report"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                ></LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lQuation"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Quatation Request"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                ></LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:visibility="invisible"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:text="Complete Visit"
+            android:background="@drawable/button_selector"
+            >
+        </Button>
+
+    </LinearLayout>
+
+</ScrollView>

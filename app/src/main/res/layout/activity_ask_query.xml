@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.communication.AskQuery">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:text="Select Person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        <Spinner
+            android:id="@+id/spinerUser"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </Spinner>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Ask Query"
+        android:id="@+id/lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <EditText
+        android:id="@+id/ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:padding="5dp"
+        android:minHeight="100dp"
+        ></EditText>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:text="Attachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        <Button
+            android:id="@+id/btnAttachment"
+            android:layout_weight="1"
+            android:text="Browse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:layout_margin="40dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </Button>
+</LinearLayout>

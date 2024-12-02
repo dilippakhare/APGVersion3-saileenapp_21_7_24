@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="250dp">
+    <LinearLayout
+        android:background="#3F51B5"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Attendance"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Attendance"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+          <Spinner
+              android:layout_weight="1"
+              android:id="@+id/spinner"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="Start KM"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:background="@drawable/edittext_selector"
+        android:id="@+id/edStartKm"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:layout_height="wrap_content"></EditText>
+   </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="End KM"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        <EditText
+            android:background="@drawable/edittext_selector"
+            android:id="@+id/endKM"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:layout_height="wrap_content"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/button_selector"
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:background="@drawable/button_selector"
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="SAVE"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+
+</LinearLayout>

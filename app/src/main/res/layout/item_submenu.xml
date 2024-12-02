@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#DDDBDB"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <LinearLayout
+         android:layout_margin="5dp"
+         android:background="#ffffff"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgLeft"
+        android:src="@drawable/ic_visit"
+        android:layout_width="45dp"
+        android:layout_height="45dp">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/txtTitle"
+        android:text="Submenu !"
+        android:textSize="14dp"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/black"
+        android:drawableRight="@drawable/righticon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+     </LinearLayout>
+
+</LinearLayout>
